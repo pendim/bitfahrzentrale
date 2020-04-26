@@ -1,19 +1,22 @@
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+	
 <?php
-require_once('db.php');
-        $db_verbindung = mysqli_connect (
-            MYSQL_HOST,
-            MYSQL_BENUTZER,
-            MYSQL_KENNWORT,
-            MYSQL_DATENBANK
-        );
-
-        if ($db_verbindung)
-        {
-            echo 'Verbindung erfolgreich: ';
-            print_r($db_verbindung);
-        }
-        else
-        {
-            echo 'keine Verbindung möglich: ' ;
-        };
+session_start();
+if(!isset($_SESSION['userid'])) {
+    die('Bitte zuerst <a href="login.php">einloggen</a>');
+}
+ 
+//Abfrage der Nutzer ID vom Login
+$userid = $_SESSION['userid'];
+ 
+echo "Hallo User: ".$userid;
 ?>
