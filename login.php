@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$pdo = new PDO('mysql:host=localhost;dbname=test', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=bitfahrzentrale', 'UserWrite', 'Hellofromyourcat');
  
 if(isset($_GET['login'])) {
     $email = $_POST['email'];

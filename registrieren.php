@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$pdo = new PDO('mysql:host=localhost;dbname=test', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=bitfahrzentrale', 'UserWrite', 'Hellofromyourcat');
 ?>
 <!DOCTYPE html> 
 <html> 
@@ -10,7 +10,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=test', 'root', '');
 <body>
  
 <?php
-$showFormular = true; //Variable ob das Registrierungsformular anezeigt werden soll
+$showFormular = true; //Variable ob das Registrierungsformular angezeigt werden soll
  
 if(isset($_GET['register'])) {
     $error = false;
