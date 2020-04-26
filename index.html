@@ -5,13 +5,13 @@
 <title>bIT-Fahrzentrale</title>
 </head>
 <link rel="stylesheet" href="style.css">
-<body class="body">
 
-    <?php 
-    session_start();
-    $pdo = new PDO('mysql:host=localhost;dbname=test', 'root', '');
+<body class="body">
+<?php
+session_start();
+$pdo = new PDO('mysql:host=localhost;dbname=test', 'root', '');
      
-    if(isset($_GET['login'])) {
+if(isset($_GET['login'])) {
         $email = $_POST['email'];
         $passwort = $_POST['passwort'];
         
@@ -28,8 +28,8 @@
         }
         
     }
-    ?>
-
+?>
+s
     <div class="div"; style="background-color: #102c47; text-align: center;">
         <p style="font-size: 60px; color: #ffffff";>
             bIT-Fahrzentrale 
