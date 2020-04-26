@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="style.css">
 
 <body class="body">
-
+<?php
+echo "Mittels echo können Daten ausgegeben werden";
+?>
     <div class="div"; style="background-color: #102c47; text-align: center;">
         <p style="font-size: 60px; color: #ffffff";>
             bIT-Fahrzentrale 
