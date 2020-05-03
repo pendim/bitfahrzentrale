@@ -18,7 +18,7 @@
                    die("Fehler bei der Verbindung: ".$con->connect_error);
                }
                echo "Verbindung aufgebaut";
-               
+
         //Formular auslesen
                $email = $_POST['email'];
                $passwort = $_POST['passwort'];
